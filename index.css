@@ -1,0 +1,99 @@
+:root {
+    --brightOrange: hsl(31, 77%, 52%);
+    --darkCyan: hsl(184, 100%, 22%);
+    --veryDarkCyan: hsl(179, 100%, 13%);
+    /*PARAGRAPHS*/
+    --transparentWhite: hsla(0, 0%, 100%, 0.75);
+    /*BACKGROUND HEADINGS BUTTONS*/
+    --veryLightGray: hsl(0, 0%, 95%);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--veryLightGray);
+}
+header nav a {
+    margin-top: 2rem;
+    margin-left: 1rem;
+}
+main {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    font-family: 'Lexend Deca', sans-serif;
+}
+.flex {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 4rem 2rem 2rem;
+    gap: 2rem;
+    height: 400px;
+    width: 280px;
+}
+.flex img {
+    width: 70px;
+}
+.flex-sedan {
+    background-color: var(--brightOrange);
+    border-radius: 10px 0 0 10px;
+}
+.flex-suv {
+    background-color: var(--darkCyan);
+}
+.flex-luxury {
+    background-color: var(--veryDarkCyan);
+    border-radius: 0 10px 10px 0;
+}
+.flex-title {
+    color: var(--transparentWhite);
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2rem;
+}
+.flex-content {
+    color: var(--veryLightGray);
+    font-size: 12px;
+    line-height: 1.6;
+}
+.btn {
+    border-radius: 50px;
+    margin-top: 2rem;
+    background-color: var(--veryLightGray);
+    width: 70%;
+    padding: 0.8rem 1rem;
+    font-family: 'Lexend Deca', sans-serif;
+    border: none;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: transparent;
+    border: 1px solid var(--veryLightGray);
+    color: var(--veryLightGray);
+}
+.btn-sedan {
+    color: var(--brightOrange);
+}
+.btn-suv {
+    color: var(--darkCyan);
+}
+.btn-luxury {
+    color: var(--veryDarkCyan);
+}
+@media(max-width: 900px) {
+    main {
+        height: 100%;
+        flex-direction: column;
+        margin: 5rem auto;
+    }
+    .flex-sedan {
+        border-radius: 10px 10px 0 0;
+    }
+    .flex-luxury {
+        border-radius: 0 0 10px 10px;
+    }
+}
