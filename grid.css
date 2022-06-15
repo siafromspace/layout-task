@@ -12,7 +12,7 @@ header nav a {
     margin: 8rem auto;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr) 15px;
     gap: 0.5rem;
 }
 .grid {
@@ -31,7 +31,7 @@ header nav a {
 .grid-three {
     background-color: green;
     grid-column-start: span 2;
-    grid-row-start: span 2;
+    grid-row-start: span 3;
 }
 .grid-four {
     background-color: rgb(21, 162, 250);
@@ -41,7 +41,7 @@ header nav a {
 .grid-five {
     background-color: rgb(21, 162, 250);
     grid-column-start: span 3;
-    grid-row-start: span 1;
+    grid-row-start: span 2;
 }
 @media (max-width: 798px) {
     .grid-container {
